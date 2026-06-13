@@ -1,7 +1,10 @@
 # White Paper: Data-Driven Performance Architecture for CWL
+- version 1.0, 14 Jun 2026
+- Authur: Mousy
 
-**Subject:** Implementing an Automated "Hall of Fame" Recognition Framework
+**Subject:** Implementing an Automated "CWL Hall of Fame" Recognition Framework
 **Author:** Community Management Team
+**Target Audience:** All Community leaders and members
 **Objective:** Establish consensus and stakeholder buy-in for an automated, dataset-validated recognition model to improve Clan War League (CWL) performance, roster accountability, and structural engagement.
 
 ## Executive Summary
