@@ -9,7 +9,7 @@ By utilizing precise database criteria (Stars Won, Destruction %, Stars Conceded
 ### 1. Most Valuable Player (MVP)
  * **Description:** The ultimate standard of offensive consistency and structural perfection across a competitive cycle.
  * **Data Validation Metric:**
-   
+
  * **Strategic Importance:** It shifts player focus away from padding destruction percentages on comfortable, lower-tier targets. Instead, it incentivizes flawless execution against assigned war mirrors. The MVP title validates players who systematically deconstruct base layouts without making mechanical errors under pressure.
 ### 2. Most Defensive Player (MDP)
  * **Description:** The premier award for defensive architecture and strategic base curation. This recognizes the player whose base acts as the ultimate deterrent to enemy stars.
@@ -36,17 +36,17 @@ By utilizing precise database criteria (Stars Won, Destruction %, Stars Conceded
 Eliminates Human Bias/Overhead                                     Drives Roster Motivation
 
 ```
- * **Zero Administrative Friction:** Because these formulas pull directly from concrete database cells (Opponent TH, Own TH, Stars Conceded), there is absolutely no manual tracking required by community owners. The sheet updates itself programmatically the moment a war concludes.
+ * **Zero Administrative Friction:** Because these formulas pull directly from concrete database cells (`Opponent TH`, `Own TH`, `Stars Conceded`), there is absolutely no manual tracking required by community owners. The sheet updates itself programmatically the moment a war concludes.
  * **Impartial Governance & Transparency:** Relying entirely on mathematical parameters completely removes emotional bias, favoritism, or personality conflicts from community recognition. A player either matches the criteria or they do not.
  * **Culture Shift toward Balanced Performance:** Historically, community recognition has been heavily skewed toward offensive flashiness. Introducing the MDP establishes a healthy equilibrium, forcing the entire community to take equal pride in their defensive layouts.
 ## Proposed System Deployment Matrix
 The table below outlines the precise schema that will be implemented inside the data architecture to ensure data integrity without overlap:
 | Title | System Code | Primary Evaluation Layer | Database Exclusion Rule |
 |---|---|---|---|
-| **Most Valuable Player** | MVP | Perfect star accumulation across active days | None |
-| **Most Defensive Player** | MDP | Minimum average stars yielded on defense | Must meet minimum hit-count filter |
-| **Silver Star Trooper** | SST | 3 Stars where \Delta\text{TH} = +1 | Excluded if \Delta\text{TH} \ge +2 |
-| **Best Whack Top** | BWT | 3 Stars where \Delta\text{TH} \ge +2 | Upgraded automatically past SST tier |
+| **Most Valuable Player** | `MVP` | Perfect star accumulation across active days | None |
+| **Most Defensive Player** | `MDP` | Minimum average stars yielded on defense | Must meet minimum hit-count filter |
+| **Silver Star Trooper** | `SST` | 3 Stars where `opponent TH` = `own TH` +1 | Excluded if TH delta is > 1 |
+| **Best Whack Top** | `BWT` | 3 Stars where `opponent TH` >= `own TH` +2 | Upgraded automatically past `SST` tier |
 
 By approving this white paper, stakeholders authorize the integration of this automated data layer into our primary administration hub, setting a new competitive benchmark for the community's operations.
 The strategy and baseline principles driving this framework align closely with competitive war practices seen in master-tier tournament play. For a detailed breakdown of how top teams structure their bases and map choices to force these defensive margins, you can review this Analysis of Competitive Base Layouts. This video offers practical visual context on how defensive planning directly prevents opponents from securing max stars, reinforcing the importance of the MDP title.
